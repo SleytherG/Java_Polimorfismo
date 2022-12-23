@@ -40,7 +40,5 @@ public abstract class Funcionario {
   this.tipo = tipo;
  }
  
- public double getBonificacion() {
-  return this.salario * 0.05;
- }
+ public abstract double getBonificacion();
 }
