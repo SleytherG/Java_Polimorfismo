@@ -1,4 +1,4 @@
-public class Gerente extends Funcionario{
+public class Gerente extends Funcionario {
  
  private String clave;
  
@@ -12,6 +12,7 @@ public class Gerente extends Funcionario{
  
  /**
   * Sobreescritura de metodo
+  *
   * @return salario y bonificación
   */
  @Override
