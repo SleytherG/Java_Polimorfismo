@@ -1,4 +1,4 @@
-public class Cliente {
+public class Cliente extends Funcionario implements Autenticable {
  private String nombre;
  private String documento;
  private String telefono;
@@ -19,12 +19,29 @@ public class Cliente {
   this.documento = documento;
  }
  
+ 
+ 
  public String getTelefono() {
   return telefono;
  }
  
  public void setTelefono(String telefono) {
   this.telefono = telefono;
+ }
+ 
+ @Override
+ public double getBonificacion() {
+  return 0;
+ }
+ 
+ @Override
+ public void setClave(String clave) {
+ 
+ }
+ 
+ @Override
+ public boolean iniciarSesion(String clave) {
+  return false;
  }
 }
 
