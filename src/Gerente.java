@@ -12,7 +12,7 @@ public class Gerente extends Funcionario{
  
  /**
   * Sobreescritura de metodo
-  * @return
+  * @return salario y bonificación
   */
  @Override
  public double getBonificacion() {
