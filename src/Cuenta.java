@@ -32,10 +32,19 @@ public class Cuenta {
   }
  }
  
+ public boolean saca(double valor) {
+  if ( this.saldo >= valor) {
+   this.saldo -= valor;
+   return true;
+  } else {
+   return false;
+  }
+ }
+ 
  public boolean transferir(double valor, Cuenta cuentaDestino) {
   if (this.saldo >= valor) {
-   this.saldo = this.saldo - valor;
-   cuentaDestino.saldo = cuentaDestino.saldo + valor;
+   this.saca(valor);
+   cuentaDestino.depositar(valor);
    return true;
   }
   return false;
