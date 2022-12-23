@@ -1,11 +1,5 @@
-public class Administrador extends Funcionario {
- private String clave;
- 
- public void setClave(String clave) {
-  this.clave = clave;
- }
- 
- public boolean iniciarSesion(String clave) {
-  return clave == "AluraCursosOnline";
+public class Administrador extends FuncionarioAutenticable {
+ public double getBonificacion() {
+  return 0;
  }
 }

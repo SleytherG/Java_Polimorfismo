@@ -5,8 +5,8 @@ public class TestControlBonificacion {
   diego.setNombre("Diego");
   
   Gerente jimena = new Gerente();
-  jimena.setSalario(10000);
-  jimena.setNombre("Jimena");
+//  jimena.setSalario(10000);
+//  jimena.setNombre("Jimena");
   
   Contador alexis = new Contador();
   alexis.setSalario(100);
@@ -14,7 +14,7 @@ public class TestControlBonificacion {
   
   ControlBonificacion controlBonificacion = new ControlBonificacion();
   controlBonificacion.registrarSalario(diego);
-  controlBonificacion.registrarSalario(jimena);
+//  controlBonificacion.registrarSalario(jimena);
   controlBonificacion.registrarSalario(alexis);
  }
 }
